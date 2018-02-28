@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+	<head>
+	<title>Drawing App</title>
+	  <link rel="stylesheet"   href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+	<!--referencing css and jquery-->
+	<link rel="stylesheet" href="navButtons.css">
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	</head>
+	<body style='margin:0'> 
+    <!--toolbar holds tools-->
+	<div id="toolbar" style="display: inline">
+	
+		<div id="rad">
+			Radius <span id="radsize"></span></br></br>
+			<div id="decrease"></div>
+			<div id="increase"></div>
+		</div>
+		
+		<div id="colour">Hex Colour: 
+			<!--updates selected colour-->
+			<div id="colChange"> </div>
+			<div id="red"></div>
+			<div id="blue"></div>
+			<div id="green"></div>
+			<div id="yellow"></div>
+		</div>
+        
+		<div class="target"  id="eraser"></div>
+        </br>
+		<div id="save"></div>	
+        <button id="undo">Press and hold to undo</button>
+		</br>
+		<button id="bg">Change Background Colour</button></br></br>
+		<button id="clearCan">PRESS RIGHT ON KEYBOARD TO CLEAR CANVAS</button>
+		</br>			
+		<button id="square">PRESS UP ON KEYBOARD TO GENERATE RANDOM CIRCLES</button>
+		<button id="circle">PRESS DOWN ON THE KEYBOARD TO GENERATE RANDOM SQUARES</button></br>
+		<button id="semi">PRESS LEFT ON THE KEYBOARD TO GENERATE RANDOM SEMI CIRCLES</button>
+	</div>
+    <canvas id="canvas">
+        Browser not supported
+    </canvas>
+	
+	<!--calls js class-->
+	<script src="main.js"></script>
+	<script src="radius.js"></script>
+	<script src="colour.js"></script>
+	<script src="savePic.js"></script>
+	<script src="rect.js"></script>
+	<script src="bounce.js"></script>
+
+    </body>
+</html>

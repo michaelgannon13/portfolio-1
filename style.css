@@ -1,0 +1,137 @@
+#bigPic{
+    width: 630px;
+    height:630px;
+    padding-right: 100px;
+    padding-top: 21px;
+    float: right;
+}
+
+#banner{
+    width:600px;
+    height:200px;
+}
+
+#favButton{
+    margin-left: 680px;
+}
+
+#favourites {
+    margin-left: 100px;
+}
+
+#big{
+    margin-left: 100px;
+    margin-right: 100px;
+    background-image: url(img/brick.png); 
+    width: 1200px;
+    height: 600px;
+}
+
+#apples, #apples2, #dee, #dion, #finn, #fitz{
+    width: 200px;
+    height: 200px;
+    padding-right: 10px; 
+    position:relative;
+}
+
+#pic1, #pic2, #pic3 {
+    margin-left:inherit;
+    text-align: left;
+    padding-bottom: 10px;
+    padding-right: 20px;
+} 
+
+#names1, #names2, #names3{
+    margin-left: 70px;
+    color: red;
+    font-size: 20px; 
+    padding-bottom: 15px;
+}
+
+#pic1{
+    padding-top: 20px;
+}
+
+#test {
+        text-align: left;
+        padding-left: 10px;
+}
+	
+.boxStyle{
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		color:#666;
+		border:1px solid #0076a3; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+}
+
+.searchArrow {
+		margin: 0;
+		padding: 5px 20px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		font-weight:bold;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #FF0000; border-right:0px;
+		background: #FF0000;
+		background: -webkit-gradient(linear, left top, left bottom, from(#FF0000), to(#FF0000));
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+}
+
+
+#wrapper {
+	width:1200px;
+	height:500px;
+	margin:0 auto;
+	background:#ccc;
+}
+#title {
+	height:50px;
+	line-height:50px;
+	border-bottom:1px solid #414141;
+	background-image:-webkit-linear-gradient(#fff 0%, #eee 100%);
+	background-image:-khtml-linear-gradient(#fff 0%, #eee 100%);
+	background-image:-ms-linear-gradient(#fff 0%, #eee 100%);
+	background-image:-o-linear-gradient(#fff 0%, #eee 100%);
+	background-image:-linear-gradient(#fff 0%, #eee 100%);
+}
+#title p {
+	margin-left:25px;
+	font-size:20px;
+	font-family:Times;
+}
+#content {
+	margin:50px;	
+}
+#content p {
+	font-size:18px;
+	font-family:Times ;
+	margin-top:15px;
+}
+.txtbox, textarea, .btn {
+	padding:4px;
+	width:300px;
+	height:30px;
+	border-radius:3px;
+	border:1px solid #414141;
+}
+textarea {
+	height:100px;
+	resize:none;
+	margin-bottom:15px;
+}
+.btn {
+	font-weight:bold;
+}
+.btn:hover {
+	text-decoration:underline;
+	cursor:pointer;	

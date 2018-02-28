@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<title>SHREDBOIZ</title>
+			<meta charset="utf-8">
+			
+			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+            <script src="functions.js"></script> 
+            <script src="mail.js"></script>
+
+            <link rel="stylesheet" type="text/css" href="style.css" />	
+        
+            <script>
+                function allowDrop(ev) {
+                    ev.preventDefault();
+                }
+                function drag(ev) {
+                    ev.dataTransfer.setData("text", ev.target.id);
+                }
+                function drop(ev) {
+                    ev.preventDefault();
+                    var data = ev.dataTransfer.getData("text");
+                    ev.target.appendChild(document.getElementById(data));
+                }
+            </script>   
+	</head>
+	<body bgcolor="#414141"> 
+        
+            <div id="banner"> 
+                <img id="banner" src="img/sml/banner.jpg"/>
+            </div>  
+        
+            <div id="test">
+		        <input type="text" id="search" class="boxStyle" size="22" maxlength="120" value="Search pictures"                                    onkeypress="searchKeyPress(event);"> 
+                <input type="submit" id="arrow" value=">" class="searchArrow" onclick="search()">
+            </div>    
+            <!--envoking fav function-->    
+            <button id="favButton" onclick="fav()">Add to favourites</button>
+        
+            <img draggable="true" ondragstart="drag(event)" id="bigPic" src="img/lrg/apples.JPG"/>
+            
+            <div id="pic1">
+                <a href = "img/lrg/apples.jpg"><img draggable="true" id="apples" src="img/lrg/apples.jpg" draggable="true"                              ondragstart="drag(event)"/></a>  
+                <a href = "img/lrg/apples2.jpg"><img id="apples2" src="img/lrg/apples2.JPG" draggable="true"/></a>
+                <a href = "img/lrg/dee.jpg"><img id="dee" src="img/lrg/dee.JPG" draggable="true"/></a>
+            </div>
+        
+            <div id="names1">APPLES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APPLES2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DEE
+            </div>
+            <div id="pic2">
+                <a href = "img/lrg/dion.jpg"><img id="dion" src="img/lrg/dion.jpg" draggable="true"/></a>
+                <a href = "img/lrg/finn.jpg"><img id="finn" src="img/lrg/finn.JPG" draggable="true"/></a>
+                <a href = "img/lrg/fitz.jpg"><img id="fitz" src="img/lrg/fitz.jpg" draggable="true"/></a>
+            </div>
+            <div id="names2">DION&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FINN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FITZ
+            </div>
+            <div id="pic3">
+                <a href = "img/lrg/dionmc.jpg"><img id="dion" src="img/lrg/dionmc.jpg" draggable="true"/></a>
+                <a href = "img/lrg/mark.jpg"><img id="finn" src="img/lrg/mark.jpg" draggable="true"/></a>
+                <a href = "img/lrg/gav.jpg"><img id="fitz" src="img/lrg/gav.jpg" draggable="true"/></a>
+            </div>
+            <div id="names3">DIONMC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MARK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GAV
+            </div>
+            <br>
+        
+        <div id="fav">
+            <img id="favourites" src="img/fav.jpg"/>
+        </div>
+        <!--fav images are appended to big-->
+        <div id="big"></div><br><br><br>
+        
+        <!--AJAX-->
+        <div id="wrapper">
+            <div id="title">
+                <p>Contact Me</p>
+            </div>
+            <div id="content">
+                <p>Name:<br />
+                <input type="text" class="txtbox" name="name" placeholder="Name"></p>
+                <p>Email:<br />
+                <input type="text" class="txtbox" name="email" placeholder="Email"></p>
+                <p>Comments:<br />
+                <textarea name="comments"></textarea></p>
+                <!--ajax send function invoked on buton click-->
+                <input type="button" value="Send mail" onClick="ajax.send()" class="btn">
+            </div>
+        </div>
+	</body>
+</html>

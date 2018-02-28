@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+	
+	<head>
+		
+		<title>HTML5 Example</title>
+		<style type="text/css"> 
+			canvas {
+			     border: 1px solid #000000
+				   }
+		</style>
+		<script type="text/javascript" src="raf.js"></script>
+		<script type="text/javascript" >
+
+			var can1;
+			var ctx1;
+			function init() {
+				can1 =	document.getElementById("canvas1");
+				ctx1 =  can1.getContext("2d");
+				question1(ctx1);
+                var img = new Image();
+                img.src = "DummyBoy1.png";
+				img.onload = draw;
+            }
+			function question1(context){ 
+
+				var ctx;
+				var count = 0;
+				var x;
+				var y;
+				var dx = 0;
+				var dy = 0;
+                
+				var img = new Image();
+                img.src = "DummyBoy1.png";
+				img.onload = draw;
+                
+                var imgObj = new Image(); // Create new img element
+			    imgObj.src = 'background.jpg'; // Set
+                
+                var imgEx = new Image();
+                imgEx.src = "explosion.png";
+                imgEx.onload = drawExplosion;
+                
+                function drawPattern(){
+                context.fillStyle=context.createPattern(imgObj, "repeat");
+			    context.fillRect(0,0,can1.width,can1.height);	
+			    }		
+			
+			    imgObj.onload = drawPattern;
+               
+                function draw() {
+				//requestAnimationFrame(draw);
+                    
+                //ctx1.clearRect(dx, 300, 106, 100);
+                drawPattern();    
+				x = (count % 4)* 110;
+				y = Math.floor(count /4) * 163;
+                    
+				ctx1.drawImage(img, x, y, 110, 163, dx++, 300, 110, 163);
+                          
+				if(count == 15) {
+				count= 0;
+				} else {
+				count++
+			}
+        }  
+                
+                 function drawExplosion() {
+                     //put explosion code here
+        }  
+                
+                
+           document.onkeydown = checkKey;
+
+            function checkKey(e) {
+            
+                e = e || window.event;
+            
+                if (e.keyCode == '39') {
+                    draw();
+                }
+                else if (e.keyCode == '37') {
+                    draw();
+                    ctx1.drawImage(img, x, y, 110, 163, dx--, 300, 110, 163);
+                    ctx1.drawImage(img, x, y, 110, 163, dx--, 300, 110, 163);
+                }
+        }         
+    } 
+                    
+        
+</script>
+
+	</head>
+
+	<body onload="init()">
+		<h2>Use arrows to move the sprite<h2>
+		<canvas id="canvas1" width="800" height="500">
+			Canvas is not supported
+		</canvas>
+
+	</body>
+
+</html>

@@ -1,0 +1,3 @@
+Gallery loads in pictures, however it does not resize them.
+clicking back onto mainpage (scene 1) the scroll does not reopen.
+Game doesnt play properly when accessed through menu but works perfectly in own file.

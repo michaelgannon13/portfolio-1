@@ -1,0 +1,321 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+#big{
+    font-family: 'Droid Serif', serif;
+    font-size: 3.4em;
+    margin-top: -15px;
+}
+
+#big1{
+    margin-top: 40px;
+    padding-right:30px; 
+    border-right: 1px solid #ccc;
+}
+
+@media (max-width:995px) {
+    #big1 {
+        border:none;
+    }
+}
+
+@media (max-width:991px) {
+    #big1 {
+        border:none;
+    }
+}
+
+#big2{
+    font-family: 'Droid Serif', serif;
+    font-size: 3.8em;
+    margin-top: -15px;
+}
+
+#cols{
+    margin-top: 20px;
+    padding-right:30px; 
+    border-right: 1px solid #ccc;
+}
+
+#cols1{
+    margin-top: 20px;
+    padding-right:30px; 
+
+}
+
+@media (max-width:995px) {
+    #cols {
+        border:none;
+    }
+}
+
+#line1{
+    background-color: #008bcc;
+    height: 1px;
+}
+
+#top{
+    background-color: #F9F6F4;
+}
+
+#line3{
+    background-color: #ccc;
+    height: 1px;
+    margin-top: 16px;
+}
+   
+#pg{
+    margin-top: 10px;
+    text-align: left;
+}
+
+#line2{
+    background-color: #ccc;
+    margin-top: 20px;
+    height: 1px;
+}
+
+#head{
+    font-family: 'Droid Serif', serif;
+    font-size: 5em;   
+    text-align: center;
+}
+
+#2ndCol{
+    margin-top: 20px;
+}
+
+#med{
+    font-family: 'Droid Serif', serif;
+    font-size: 1.2em; 
+    margin-top: 15px;
+}
+
+.firstcharacter { 
+    float: left; 
+    color: #008bcc; 
+    font-size: 75px; 
+    line-height: 60px; 
+    padding-top: 4px; 
+    padding-right: 8px; 
+    padding-left: 3px; 
+    font-family: 'Droid Serif', serif; 
+}
+
+#rTitle{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+#details{
+    margin-top: 5px;
+}
+
+.blueAuth {
+    color: #008bcc;
+}
+
+#b{
+    color: white;
+    font-size: 1.3em;
+    font-family: 'Droid Serif', serif;
+    padding-top: 10px;
+}
+
+#b1{
+    padding-top: 10px;
+    color: white;
+    font-size: 2em;
+}
+
+#clock{
+    text-align: center;
+}
+
+#mHead{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #008bcc;
+    font-size: 2em;
+    font-family: 'Droid Serif', serif;
+    padding-left: 15px;
+}
+
+#b2{
+    color: white;
+    font-size: 1.3em;
+    font-family: 'Droid Serif', serif;
+}
+
+#b3{
+    color: white;
+    margin-top: 5px;
+    font-size: 1.2em;
+}
+
+#light{
+    color: #008bcc;
+    font-size: 2em;
+    font-weight: 300;
+    margin-top: 25px;
+}
+
+#arr{
+    color: white;
+    text-align: left;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding-bottom: 10px;
+}
+
+#arr1{
+    color: white;
+    text-align: right;
+    margin-top: 10px;
+    padding-bottom: 10px;    
+}
+
+#arr2{
+    color: #008bcc;
+    text-align: lefts;
+    margin-top: 10px;
+    padding-bottom: 10px;  
+    font-family: 'Droid Serif', serif;
+}
+
+#arr3{
+    color: white;
+    text-align: left;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding-bottom: 10px;
+    font-family: 'Droid Serif', serif;
+}
+
+#read{
+    text-align: right;
+    color: #008bcc;
+    font-family: 'Droid Serif', serif;
+}
+
+#read1{
+    text-align: right;
+    color: white;
+    font-family: 'Droid Serif', serif;
+}
+
+#read2{
+    text-align: left;
+    color: #008bcc;
+    font-family: 'Droid Serif', serif;
+    padding-top: 20px;
+    margin-left: -15px;
+}
+
+#time{
+    text-align: left;
+    color: #008bcc;
+    font-family: 'Droid Serif', serif;
+    margin-bottom: 20px;
+}
+
+#midBig{
+    font-family: 'Droid Serif', serif;
+    font-size: 1.5em;
+    margin-top: -5px;
+}
+
+#midBig2{
+    font-family: 'Droid Serif', serif;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+
+#bot {
+    font-family: 'Droid Serif', serif;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+#auth{
+    padding-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;    
+}
+
+#story{
+    font-size: 0.7em;     
+}
+
+#nav {
+    font-size: 1.5em; 
+    text-align: center;
+    font-weight: 600;
+    color:  #008bcc ;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;    
+}
+
+#nav:hover {
+	background-color: #008bcc; 
+    text-emphasis-color: white;
+    cursor: pointer; 
+    color: white;
+}
+
+#blue{
+    font-size: 1.2em;
+    color:  #008bcc ;
+    margin-top: 25px;
+}
+
+#blueCol{
+    background-color: #008bcc ;
+    margin-top: 15px;
+    padding-left: 10px;
+}
+
+#blue2{
+    color:  #008bcc ;
+}
+
+#mid{
+    padding-top: 10px;
+}
+
+#midCol{
+    padding-top: 15px;
+    font-size: 1em;
+}
+
+#midCol1{
+    padding-top: 15px;
+    font-size: 1.1em;
+}
+
+#midCol2{
+    padding-top: 15px;
+    font-size: 0.9em;
+}
+
+#midCol3{
+    padding-top: 15px;
+    font-size: 0.3em;
+}
+
+#midCol4{
+    padding-top: 15px;
+    font-size: 1em;
+}
+
+.modal-header{
+    background-color: #008bcc;
+}
+
+.modal-title{
+    color: #ffffff;
+}

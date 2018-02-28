@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="js/drag.js"></script> 
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/hammer.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+	  <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body> 
+    <div class="wrapper">
+          <div class="list-c">
+                <img src="pics/list1.png" width="4" height="8" alt="list">
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          </div>
+
+          <form id="track" method="link" action="text.html">
+            <span id="score1">Score: </span><input id="score" type="text" name="score"> 
+            <button id="arrow" type="submit"><img id="pointer"  src="pics/arrow.png" /></button>
+          </form>
+
+          <img id ="button" src="pics/help1.png">
+          <!--table items-->
+          <div id="keyDiv" value="KEYS" class="draggable">
+              <img id="keys" value="KEYS" src="pics/keys.png" draggable="true" ondragstart="drag(event)" width="154" height="30">
+              <p class="text">KEYS</p>
+          </div>
+          <div id="phoneDiv" class="draggable">
+              <img id="phone" value="PHONE" src="pics/phone2.png" draggable="true" ondragstart="drag(event)" width="65" height="120">
+              <p class="text">PHONE</p>
+          </div>
+          <div id="walletDiv" class="draggable">
+              <img id="wallet" value="WALLET" src="pics/wallet.png" draggable="true" ondragstart="drag(event)" width="120" height="120">
+              <p class="text">WALLET</p>         
+          </div>
+          <div id="pencilDiv" class="draggable">
+              <img id="pencil" value="PENCIL" src="pics/pencil.png" draggable="true" ondragstart="drag(event)"width="160" height="80">
+              <p class="text">PENCIL</p>
+          </div>
+          <div id="staplerDiv" class="draggable">
+              <img id="stapler" value="STAPLER" src="pics/stapler.png" draggable="true" ondragstart="drag(event)" width="150" height="55">
+              <p class="text">STAPLER</p>
+          </div>
+          <div id="bookDiv" class="draggable">
+              <img id="book" value="BOOK" src="pics/book.png" draggable="true" ondragstart="drag(event)" width="209" height="157">
+              <p class="text">BOOK</p>
+          </div>
+          <div id="cardDiv" class="draggable">
+              <img id="card" value="BUS CARD" src="pics/ice3.png" draggable="true" ondragstart="drag(event)" width="209" height="157">
+              <p class="text">BUS CARD</p>
+          </div>
+    </div>
+    <div id="dialog" title="HOW TO PLAY" style="visibility:hidden">
+          <p id="big">
+            <img src="pics/demo.gif" style="width:200px;height:200px"><br><br>
+            Click and drag the important items from the table, into the red boxes on the right. </p><p>
+            Hint: Think about what you need to bring on your journey          
+            </p>
+    </div> 
+        <script>
+        $("#button").click(function(){
+             $("#dialog").css("visibility", "visible");
+             $("#dialog").dialog();
+           }
+        );
+      </script> 
+  </body>
+</html>

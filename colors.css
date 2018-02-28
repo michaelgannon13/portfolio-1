@@ -1,0 +1,62 @@
+body {background: #222d2d; color: #FFFFFF; }
+
+a { color: #444444; text-decoration: none; }
+a:hover { color: #000000; }
+
+div.sitetitle,h1 { color:#FFFFFF; }
+
+div.sitetitle,h1,h2,h3,h4 { background:#3E4F4F; color:#FFFFFF; margin-bottom: 10px; }
+
+.container { background: #2F3E3E; border: 1px solid #3E4F4F;}
+
+#main { background: #2F3E3E; }
+
+#main div.sitetitle a { color: #FFFFFF; }
+#main div.sitetitle a:hover { color: #FFFFFF; }
+
+#main a:hover { color: #000000; text-decoration:underline; }
+#main h1 a,#main h1 a:hover { color: #FFFFFF; text-decoration:none; }
+
+#nav ul      { color: #FFFFFF; }
+#nav ul li   { color: #FFFFFF; }
+#nav ul li a { color: #EFEFEF; }
+#nav ul li a:hover,
+#nav ul li a:active,
+#nav ul li a.active { color: #FFFFFF; background:#2F3E3E; }
+
+#social-icons       { background: #3E4F4F; border: 0; }
+#social-icons p     { float:left; margin-bottom:0; padding-bottom:0.4em; }
+
+
+thead th {background:#222D2D;color:#FFFFFF;}
+tfoot    {font-style:italic; background:#666666;}
+
+th, td, caption {padding:4px 10px 4px 5px;}
+
+tbody tr:nth-child(even) td,
+tbody tr.even td { background:#465959; }
+
+tbody tr:nth-child(odd) td,
+tbody tr.odd td  { background:#3A4C4C; }
+
+
+table tr th { background:#222D2D; padding:4px 4px 4px 6px;  line-height: 1.6em; vertical-align: top; color: #FFFFFF; font-weight: normal;}
+table tr td { background:#FFFFFF; padding:4px 4px 4px 10px; line-height: 1.6em; vertical-align: top; }
+
+table tfoot tr th,
+table tfoot tr td { padding:4px 4px 4px 6px; color: #FFFFFF;background:#222D2D;font-weight:normal;}
+
+table a { color:#000000; font-weight: bold; line-height: 1.6em; }
+table small { font-size: 0.6em; line-height: .5em; }
+
+#email_contact_form table { border-top: 1px solid #CACACA; border-right: 1px solid #CACACA;}
+
+#feeds {
+border-top: 1px solid #DDD;
+border-bottom: 1px solid #DDD;
+background: #3E4F4F;
+}
+
+
+#footer { color: #333333; font-size: 11px; padding:10px; text-align: center; }
+#footer .copyright a       { color:#333333; text-decoration:underline; }

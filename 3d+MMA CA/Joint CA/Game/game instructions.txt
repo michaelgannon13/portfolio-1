@@ -1,0 +1,7 @@
+Game Instructions:
+
+1. Press start
+
+2. Wait until ship has appeared on stage
+
+3. When the cable at the back of the ship is above the cable under water (at the yellow boxes) click drop

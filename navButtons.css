@@ -1,0 +1,95 @@
+*{
+	box-sizing:border-box;
+	-moz-box-sizing: border-box;
+}
+
+#toolbar{
+	width: 130px;
+	height: 100%;
+	padding: 5px;
+	position: fixed;
+	background-color:#707070;
+	color:white;
+	}
+
+#aToolbar{
+	width: 100%;
+	height: 50px;
+	padding: 5px;
+	position: fixed;
+	background-color:#707070;
+	color:white;
+    float:right;
+	}
+
+#rad{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#increase{
+   	background-image:url('plus.png');
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	padding: 5px;
+}
+
+#decrease{
+   	background-image:url('minus.png');
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	padding: 5px;
+}	
+
+#eraser{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   	background-image:url('rsz_1eraser_clipped_rev_1.png');
+	width: 60px;
+	height: 60px;
+	padding: 30px;
+}	
+
+#save{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   	background-image:url('rsz_1rsz_1floppy-disk-icon_clipped_rev_1.png');
+	width: 75px;
+	height: 51px;
+}	
+
+#red{
+   	background-image:url('red.png');
+	width: 60px;
+	height: 40px;
+}	
+
+#blue{
+   	background-image:url('blue.png');
+	width: 80px;
+	height: 40px;
+}	
+
+#green{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   	background-image:url('green.png');
+	width: 120px;
+	height: 40px;
+}
+
+
+#yellow{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   	background-image:url('yellow.png');
+	width: 130px;
+	height: 40px;
+}
+

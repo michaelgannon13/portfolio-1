@@ -1,0 +1,1 @@
+/* core.js WAS NOT FOUND */

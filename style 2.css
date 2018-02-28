@@ -1,0 +1,72 @@
+#bigPic{
+    width: 630px;
+    height:630px;
+    padding-right: 100px;
+    padding-top: 48px;
+    float: right;
+}
+
+#banner{
+    width:600px;
+    height:200px;
+    text-align:left;
+}
+
+#big{
+    
+    /*transform:scaleY(4);
+    transform:scaleX(4);*/
+}
+
+#apples, #apples2, #dee, #dion, #finn, #fitz{
+    width: 200px;
+    height: 200px;
+    padding-right: 10px; 
+    position:relative;
+}
+
+#pic1, #pic2, #pic3 {
+    margin-left:inherit;
+    text-align: left;
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
+
+#pic1{
+    padding-top: 20px;
+}
+
+#test {
+        text-align: left;
+    padding-left: 10px;
+}
+	
+.boxStyle{
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		color:#666;
+		border:1px solid #0076a3; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+}
+
+.searchArrow {
+		margin: 0;
+		padding: 5px 20px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		font-weight:bold;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #FF0000; border-right:0px;
+		background: #FF0000;
+		background: -webkit-gradient(linear, left top, left bottom, from(#FF0000), to(#FF0000));
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+}
